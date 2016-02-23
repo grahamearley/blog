@@ -16,11 +16,12 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #a6bf40;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+$fake-grass-green: #a6bf40; // same as "brand-color"
 
 // Width of the content area
 $content-width:    800px;
