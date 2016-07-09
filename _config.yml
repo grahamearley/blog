@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Graham's Blog
-email: your-email@domain.com
-description: Thoughts from a liberal arts computer science student.
+title: Graham Patrick Earley
+email: graham@grahamearley.website
+description: Graham Earley's blog.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://grahamearley.website" # the base hostname & protocol for your site
 github_username:  grahamearley
