@@ -99,4 +99,4 @@ With this new, more familiar interface set up, the database is ready to face the
 
 ✌ 
 
-[Email me](mailto:graham@grahamearley.website) if you have any questions.
+Questions? [Email me.](mailto:graham@grahamearley.website)
