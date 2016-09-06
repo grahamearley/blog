@@ -69,6 +69,7 @@ Now, let's assemble the key-value payload (the Bundle that the app will receive)
       "newsItemTitle" : newsItemTitle,
       "newsItemMessage" : newsItemMessage
     },
+    "to" : "/topics/news" // (read below for info on this field!)
   }
 
 {% endhighlight %}
@@ -77,14 +78,13 @@ The object contains a child object keyed by `"notification"`. In this child, the
 
 The next child, keyed by `"data"` is where our custom key-value items go. We're sending the news item's title and message here, which we grabbed from the spreadsheet in the earlier code block.
 
-**Testing note:** 
-*If you want to test this out without sending a random notification to all your users, add this key-value pair to the top-level parent object:*
+Finally, use the `"to"` field to set who should receive this notification. In most cases, you would want to put a Firebase topic here, as I did in the example above. You can subscribe users to a topic within your app by calling (in Android)
 
 ```
-"to" : "Your device's registration token.",
+FirebaseMessaging.getInstance().subscribeToTopic("news");
 ```
 
-*where the value is your device's registration token. You can easily access your token by including a line of code in your app. Read more on that [here](https://firebase.google.com/docs/notifications/android/console-device#access_the_registration_token). Then, the notification will only be sent to your device. Phew.*
+Then, you would specify the topic as `"to": "/topics/news"` in your JSON object. If you want to test this out without sending a random notification to all your users, set the `"to"` field to your device's registration token. You can easily access your token by including a line of code in your app. Read more on that [here](https://firebase.google.com/docs/notifications/android/console-device#access_the_registration_token). Then, the notification will only be sent to your device. (Phew.)
 
 The final step is to actually send this payload to Firebase. You'll need to access your server key by going to your *Project Settings* from the Firebase Console and clicking on *Cloud Messaging*. This key goes into your POST request's headers. Additionally, you'll notice that in the following block, I access the aforementioned cell in my sheet for storing whether or not the notification has been sent.
 
