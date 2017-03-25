@@ -9,8 +9,8 @@
 title: Graham Patrick Earley
 email: graham@grahamearley.website
 description: Graham Earley's blog.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://grahamearley.website" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://blog.grahamearley.website" # the base hostname & protocol for your site
 github_username:  grahamearley
 
 # Build settings
