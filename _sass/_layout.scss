@@ -55,6 +55,16 @@
         }
     }
 
+    .page-link-featured {
+        line-height: $base-line-height;
+        color: $grey-purple-color;
+
+      // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
   @include media-query($on-palm) {
     font-size: 12px;
   }
