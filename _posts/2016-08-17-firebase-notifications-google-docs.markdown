@@ -10,6 +10,8 @@ I have an app that uses Firebase for its backend. The app is a platform for less
 
 There's another feature from Firebase that the app's content managers use, though: Firebase Notifications. Firebase Notifications are a super easy way to send push notifications to your app, and we use them to send tips and updates on the lesson plans to the teachers who use the app.
 
+<!--more-->
+
 What makes Firebase Notifications so great is that the Firebase Console includes a nice interface for sending the notifications to a device. You can just type some body text for the notification and send it off!
 
 ![Firebase's basic web interface for sending notifications](/blog/img/easy_notif.png)

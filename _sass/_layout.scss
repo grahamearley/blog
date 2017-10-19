@@ -190,6 +190,9 @@
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+
+    font-family: $base-header-font-family;
+    font-weight: normal;
 }
 
 .post-content {

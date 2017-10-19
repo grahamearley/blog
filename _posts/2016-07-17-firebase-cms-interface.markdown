@@ -12,6 +12,8 @@ Although server integration is essential to my app, the integration itself is no
 
 Now, the key part about my app's database is that the data is maintained by my client (an education group), not by me. The app is a platform for lesson plans, and my client manages the lesson files and information that gets uploaded to the server. As the content managers are not programmers, the familiar, spreadsheet-style Parse Dashboard was very useful for us. It was very intuitive to add new rows to the sheet to add a new lesson.
 
+<!--more-->
+
 ![The Parse Dashboard](/blog/img/parse_dashboard.jpg)
 
 However, the interface for the Firebase database is much closer to writing pure JSON. Each entry has a parent-child hierarchy, and for each new entry, you must spell out both the key and the value. An entry in the database looks like this:
