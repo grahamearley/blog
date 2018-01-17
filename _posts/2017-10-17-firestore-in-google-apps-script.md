@@ -14,6 +14,8 @@ In this post, I'm going to go over some details for authenticating a service acc
 
 <!--more-->
 
+**Note:** _If you just want to use the Google Apps Script Firestore library, go ahead! [Basic instructions are available in the Github repository](https://github.com/grahamearley/FirestoreGoogleAppsScript). The rest of this post will go over some of the internals of the library, but you don't need to know this stuff to be able to use it._
+
 ## Authenticating a service account and obtaining a token
 For this step, I'm going to assume your Firestore [security rules](https://firebase.google.com/docs/firestore/security/get-started) require authentication for reads and writes. If your database can be read or written to by anyone, then you don't have to worry about this step (but you might have to worry about the security of your data!).
 
